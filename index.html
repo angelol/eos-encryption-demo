@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="demo.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="eosjs-ecc/dist/eosjs-ecc.js"></script>
+        <script src="demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bytebuffer@5.0.1/dist/bytebuffer.min.js"></script>
+
+
+    </head>
+    <body>
+        <div class="alice">
+            <form>
+                <label>Alice's Public Key:</label><input name="alices_public_key"></input><br />
+                <label>Alice's Private Key:</label><input name="alices_private_key"></input><br />
+                <label>Alice's Message:</label><input name="message"></input>
+                <button type="submit" disabled="disabled">Encrypt</button><br />
+            </form>
+
+        </div>
+        <div class="bob">
+            <label>Bob's Public Key:</label><input name="bobs_public_key"></input><br />
+            <label>Bob's Private Key:</label><input name="bobs_private_key"></input><br />
+            <form>
+                <label>Encrypted message:<label><input name="encrypted_message"></input><br/>
+                <label>Nonce:<label><input name="nonce"></input><br/>
+                <label>Checksum:<label><input name="checksum"></input><br/>
+                <button type="submit">Decrypt</button><br />
+            </form>
+            Decrypted plaintext: <span class="decrypted_plaintext"></span>
+        </div>
+    </body>
+</html>

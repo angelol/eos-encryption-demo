@@ -1,0 +1,11 @@
+.alice {
+    background-color:white;
+    color:black;
+    padding:20px;
+}
+
+.bob {
+    background-color:black;
+    color:white;
+    padding:20px;
+}
